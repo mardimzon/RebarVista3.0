@@ -1,0 +1,167 @@
+/* static/css/welcome.css */
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.welcome-container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.welcome-logo {
+    margin-bottom: 20px;
+}
+
+.welcome-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.welcome-container p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #5d6d7e;
+}
+
+.connection-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.connection-option {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.connection-option:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.connection-icon {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.connection-option h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.connection-option p {
+    font-size: 1rem;
+    color: #5d6d7e;
+    margin-bottom: 20px;
+}
+
+.connection-steps {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.connection-steps li {
+    margin-bottom: 10px;
+    color: #5d6d7e;
+}
+
+.start-button {
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+}
+
+.start-button:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(40, 167, 69, 0.25);
+    color: #fff;
+    text-decoration: none;
+}
+
+.connection-help {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.connection-help a {
+    color: #5d6d7e;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.connection-help a:hover {
+    color: #28a745;
+}
+
+#help-content {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#help-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+#help-content p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+#help-content ul {
+    padding-left: 20px;
+}
+
+#help-content li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #5d6d7e;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 30px 20px;
+    }
+    
+    .welcome-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .start-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}

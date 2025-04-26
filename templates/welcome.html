@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RebarVista Remote</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/welcome.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <img src="/static/images/logo.png" width="245" height="75" alt="RebarVista Logo" class="welcome-logo">
+        <h1>Welcome to RebarVista Remote</h1>
+        <p>Connect to your Raspberry Pi for rebar detection and volume calculation</p>
+        
+        <div class="connection-options">
+            <div class="connection-option">
+                <i class="fas fa-wifi fa-3x connection-icon"></i>
+                <h3>WiFi Direct Connection</h3>
+                <p>Connect directly to your Raspberry Pi's WiFi network</p>
+                <ol class="connection-steps">
+                    <li>Turn on your Raspberry Pi with RebarVista</li>
+                    <li>Connect your device to the "RebarVista" WiFi network</li>
+                    <li>Click the button below to begin</li>
+                </ol>
+            </div>
+        </div>
+        
+        <a href="/index" class="start-button">
+            <i class="fas fa-play-circle me-2"></i>Start Rebar Detection
+        </a>
+        
+        <div class="connection-help">
+            <a href="#" id="help-toggle">
+                <i class="fas fa-question-circle"></i> Need help connecting?
+            </a>
+            <div id="help-content" style="display:none;">
+                <h4>Connection Troubleshooting</h4>
+                <p>If you're having trouble connecting to your Raspberry Pi:</p>
+                <ul>
+                    <li>Make sure your Raspberry Pi is powered on and the RebarVista application is running</li>
+                    <li>Verify that you've connected to the "RebarVista" WiFi network on your device</li>
+                    <li>The default WiFi password is "rebarconnect"</li>
+                    <li>If you still can't connect, try restarting your Raspberry Pi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/static/js/welcome.js"></script>
+</body>
+</html>
