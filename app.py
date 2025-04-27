@@ -16,7 +16,7 @@ CORS(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Configuration
-RASPI_IP = "localhost"  # Default IP for Raspberry Pi in WiFi direct mode
+RASPI_IP = "192.168.100.80"  # Default IP for Raspberry Pi in WiFi direct mode
 RASPI_PORT = 5000
 RASPI_API_URL = f"http://{RASPI_IP}:{RASPI_PORT}/api"
 POLLING_INTERVAL = 2  # Reduced from 5 to 2 seconds for faster updates
